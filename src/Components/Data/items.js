@@ -2,8 +2,4 @@ const jsonData = '[{"listing_id":708099714,"state":"active","user_id":134783484,
 const itemsJs = JSON.parse(jsonData);
 const items = itemsJs.filter(item => (item.state = 'active', !item.error_messages));
 
-
-
-console.log(items);
-
 export default items;
